@@ -1,0 +1,121 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../img/image/fail_bg.png) center no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  .failed {
+    width: 1.39rem;
+    height: 1.39rem;
+    background: url(../../img/image/failed.png) 0 0 no-repeat;
+    background-size: 100%;
+    margin-top: 1.95rem;
+  }
+  .failedTip {
+    width: 1.39rem;
+    height: 1.39rem;
+    background: url(../../img/image/gantan.png) 0 0 no-repeat;
+    background-size: 100%;
+    margin-top: 1.95rem;
+  }  
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .36rem;
+    .info_fail {
+      width: 2.69rem;
+      height: .66rem;
+      background: url(../../img/image/info_fail.png) 0 no-repeat;
+      background-size: 100%;
+      margin-top: .3rem;
+      &.info_success {
+        background: url(../../img/image/info_success.png) 0 no-repeat;
+        background-size: 100%;      
+      }
+    }
+    .info_way {
+      width: 3.76rem;
+      text-align: center;
+      padding: .15rem 0;
+    }
+  }
+  .myPhone {
+    width: 4rem;
+    height: .76rem;
+    font-size: .32rem;
+    border-bottom: 1px solid #ccc;
+    margin-top: .3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.myPhone_1 {
+      margin-top: .6rem;
+    }
+    .phone_icon {
+      width: .47rem;
+      height: .47rem;
+      display: block;
+      background: url(../../img/icon/phone_icon.png) 0 0 no-repeat;
+      background-size: 100%;
+    }
+  }
+  .time {
+    padding-top: .8rem;
+    font-size: .4rem;
+
+  }
+  .other {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%); 
+    .logo {
+      width: 2.17rem;
+      height: 1.07rem;
+      background: url(../../img/image/small_logo2.png) 0 0 no-repeat;
+      background-size: 100%;
+    }
+  }
+  .bottom-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #000;
+    font-size: .36rem;
+    font-family: "微软雅黑";
+    &.fold-enter-active, &.fold-leave-active {
+      transition: all 0.4s ease-in-out;
+    }
+    &.fold-enter {
+      transform: translateY(2.4rem);
+    }
+    &.fold-leave-active {
+      opacity: 0;
+    }
+    .menu-select {
+      width: 100%;
+      height: 1.2rem;
+      background: #fff;
+      line-height: 1.2rem;
+      text-align: center;
+      &.call {
+        border-bottom: 1px solid #ddd;
+        a {
+          color: #359dda;
+        }
+      }
+    }
+  }
+}

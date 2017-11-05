@@ -1,0 +1,92 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../img/image/check_bg.png) 0 no-repeat;
+    background-size: 100%;
+    .big-logo {
+      width: 4.87rem;
+      height: 2.59rem;
+      background: url(../../img/image/big_logo.png) 0 no-repeat;
+      background-size: 100%;
+      margin-top: 1.4rem;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: .5rem;
+      .info-name, .info-phone, .info-code {
+        display: flex;
+        flex-direction: row;
+        margin-top: .55rem;
+        .info-icon {
+          width: .85rem;
+          height: .85rem;
+          &.info-name-icon {
+            background: url(../../img/icon/user_name.png) center no-repeat;
+            background-size: contain;
+          }
+          &.info-phone-icon {
+            background: url(../../img/icon/user_phone.png) center no-repeat;
+            background-size: contain;
+          }
+          &.info-code-icon {
+            background: url(../../img/icon/user_code.png) center no-repeat;
+            background-size: contain;
+          }
+        }
+        .info-input {
+          width: 5.05rem;
+          height: .76rem;
+          border-bottom: 1px solid #fff;
+          margin-left: .18rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .info-entry {
+            width: 2.6rem;
+            height: 100%;
+            font-size: .36rem;
+            border: none;
+            padding-left: .2rem;
+            line-height: normal;
+            background: transparent;
+            color: #fff;
+            &::-webkit-input-placeholder {
+              font-size: .36rem;
+              line-height: normal;
+            }
+          }
+          .get-code {
+            min-width: 2rem;
+            height: .6rem;
+            padding: 0 .15rem;
+            background: #2269d4;
+            line-height: .6rem;
+            font-size: .3rem;
+            color: #fff;
+            text-align: center;
+            border-radius: .3rem;
+            border: none;
+            &.get-code[disabled] {
+              opacity: 1;
+            }            
+          }
+        }
+      }
+    }
+    .info-button {
+      width: 5.77rem;
+      height: .8rem;
+      background: #2269d4;
+      border-radius: .5rem;
+      text-align: center;
+      line-height: .8rem;
+      color: #fff;
+      font-size: .4rem;
+      margin-top: .85rem;
+    }
+  }
